@@ -1,10 +1,11 @@
 @-moz-document domain('youtube.com'){
   div#feed, div#watch7-sidebar-contents, div#watch8-action-buttons, div#watch-discussion, .standalone-collection-badge-renderer-text, div#watch-action-panels { display: none !important; }
+  div#related, #comments, div#info.ytd-video-primary-info-renderer { display: none !important; }
 }
 
 @-moz-document domain('reddit.com'){
-  .score, div.side, .search-score, #sr-header-area,.userkarma, a.author, span.rank, div.midcol, div.footer-parent, ul.flat-list.buttons, div.self { display: none !important; }
-  p.title { display: inline !important; }
+  .score, div.side, .search-score, #sr-header-area,.userkarma, a.author, span.rank, div.midcol, div.footer-parent, ul.flat-list.buttons, div.self, time.live-timestamp, #mail { display: none !important; }
+  p.title, p.tagline { display: inline !important; }
 }
 
 @-moz-document domain('facebook.com'){
@@ -18,4 +19,12 @@
 
 @-moz-document domain('imgur.com'){
   div#comments-container, div#right-content, div.next-prev, div.post-action { display: none !important; }
+}
+
+@-moz-document domain('news.ycombinator.com'){
+  td.subtext, td.votelinks { display: none !important; }
+}
+
+@-moz-document domain('goodreads.com'){
+  div#other_reviews { display: none !important; }
 }
